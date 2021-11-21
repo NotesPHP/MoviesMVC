@@ -1,6 +1,8 @@
 <?php
-require_once __DIR__ . '/Controllers/MovieController.php';
-//var_dump($_SERVER["REQUEST_URI"]);
+
+namespace App;
+use App\Controllers\MovieController;
+use App\Core\SQLConection;
 
 $uri = $_SERVER["REQUEST_URI"];
 

@@ -1,13 +1,16 @@
 <?php
 
-require_once 'Database.php';
+namespace App\Models;
+use App\Core\FakeMovieRepository;
+use App\Core\SQLMovieRepository;
+use App\Core\IMovieRepository;
 
-class Movie{
+class Movie {
     public $id;
     public $title;
     public $image;
 
-    private $db;
+    private IMovieRepository $db;
 
     public function __construct($data = null)
     {
@@ -16,7 +19,7 @@ class Movie{
             $this->title = $data['title'];
             $this->image = $data['image'];
         }
-        $this->db = new Database();
+        $this->db = new SQLMovieRepository();
     }
 
     public function all() {

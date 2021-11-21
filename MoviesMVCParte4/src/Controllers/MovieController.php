@@ -1,6 +1,7 @@
 <?php
 
-require_once __DIR__ . '/../Movie.php';
+namespace App\Controllers;
+use App\Models\Movie;
 
 class MovieController{
     public function index(){
