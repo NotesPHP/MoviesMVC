@@ -5,7 +5,7 @@ use PDO;
 use PDOException;
 
 
-class SQLConection{
+class SQLConnection{
 
     public $mysql;
 

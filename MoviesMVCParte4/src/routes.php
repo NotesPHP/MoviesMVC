@@ -2,7 +2,7 @@
 
 namespace App;
 use App\Controllers\MovieController;
-use App\Core\SQLConection;
+use App\Core\SQLConnection;
 
 $uri = $_SERVER["REQUEST_URI"];
 

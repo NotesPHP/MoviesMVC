@@ -8,7 +8,7 @@ class SQLMovieRepository implements IMovieRepository{
     private $conection;
 
     function __construct(){
-        $this->conection = (new SQLConection()) -> mysql;
+        $this->conection = (new SQLConnection()) -> mysql;
     }
 
     function getall(){
